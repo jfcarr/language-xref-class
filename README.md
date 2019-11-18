@@ -30,4 +30,5 @@
 
 ## Links
 
+* [Language Benchmarks](https://benchmarksgame-team.pages.debian.net/benchmarksgame/)
 * [Rosetta Code](https://rosettacode.org/wiki/Rosetta_Code)
