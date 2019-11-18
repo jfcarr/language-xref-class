@@ -27,3 +27,7 @@
 * Object orientation
 * Threading
 	* async operations, wait
+
+## Links
+
+* [Rosetta Code](https://rosettacode.org/wiki/Rosetta_Code)
