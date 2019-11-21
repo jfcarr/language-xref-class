@@ -11,22 +11,25 @@
 
 * General language comparison -> common use cases, "killer features", etc.
 * Environment setup -> installation, code editor, project management.
-* Basic syntax / "Hello World!"
+* Basic syntax
 	* Naming conventions
 	* Statements, statement terminators
 	* Variable assignment
 	* Code blocks
 	* Comments, documentation comments
-* Control flow
-	* Foreach, for
-	* While, do-while
+* Control flow, e.g., foreach, for, while, do-while
 * Exception handling
-* Arrays, collections, hashs, vectors, dictionaries
+* Collection-type objects, e.g., arrays, hashs, vectors, dictionaries
 * String operations
 * Functions -> signatures, value vs reference
 * Object orientation
 * Threading
 	* async operations, wait
+* Tasks
+	* Simple -> Hello world!
+	* Tokenize a string
+	* Fibonacci sequence
+	* Call a web service
 
 ## Links
 
