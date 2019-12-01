@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8" />
+	</head>
+
+	<body>
+		<script>
+			// Enforce variable declaration.
+			"use strict";
+
+			function arrayTest() {
+				// Arrays are of a fixed size, specified when you create them.
+				var arrayOfInts = [1, 2, 3];
+
+				var arrayList = 'Array contents:<br>';
+				arrayList += '<ul>';
+				// You can step through the elements of the array in a for loop, using the array
+				// length to keep track of where you are.  Arrays in JavaScript are 0-based.
+				for (var i = 0; i < arrayOfInts.length; i++) {
+					arrayList += '<li>' + arrayOfInts[i].toString() + '</li>';
+				}
+				arrayList += '</ul>';
+				document.write(arrayList);
+
+				// Using an exception handler will allow you to handle out-of-bounds conditions.
+				try {
+					document.write('<p>Element 10 contains ' + arrayOfInts[9] + '</p>')
+				}
+				catch (err) {
+					document.write('<p>' + err.message + '</p>');
+				}
+			}
+
+			function collectionTest() {
+				// A Set provides more flexibility than an Array.
+				var setOfIntegers = new Set();
+
+				// Sets are mutable, so you can add items after the Set is created.
+				setOfIntegers.add(1);
+				setOfIntegers.add(2);
+				setOfIntegers.add(3);
+				setOfIntegers.add(4);
+
+				// You can also remove items from a Set, by key.
+				setOfIntegers.delete(4);
+
+				var setList = 'Set contents:<br>';
+				setList += '<ul>';
+				// You can walk though elements of a Set with a for.
+				for (let integerItem of setOfIntegers) {
+					setList += '<li>' + integerItem.toString() + '</li>';
+				}
+				setList += '</ul>';
+				document.write(setList);
+			}
+
+			arrayTest();
+
+			collectionTest();
+		</script>
+	</body>
+
+</html>

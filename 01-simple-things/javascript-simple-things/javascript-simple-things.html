@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8" />
+	</head>
+
+	<body>
+		<script>
+			// Enforce variable declaration.
+			"use strict";
+
+			function simpleOutput(nameValue) {
+				document.write('<p>Hello World!</p>');
+
+				// You can construct a string with concatenation.
+				document.write('<p>' + 'Hello ' + nameValue + '!' + '</p>');
+
+				// As of ECMAScript 6, you can do string interpolation ('template literals' in the ES6 specification).
+				// (Note the use of enclosing backticks, NOT single quotes)
+				document.write(`<p>Hello ${nameValue}!</p>`);
+
+				var i = 10;
+				// ^ strict mode means I must use the var declaration
+				document.write('<p>Value of i is ' + i + '</p>');
+			}
+
+			function typingRules() {
+				// Javascript is dynamically typed, so types don't need to be specified in declarations -> they're
+				// determined at runtime.
+
+				var stringValue = 'A String';
+				var integerValue = 10;
+
+				// Types can be determined with the typeof function, but remember that in Javascript, variables don't have
+				// types, values do.  So, an integer won't evaluate to 'integer', but to 'number'.
+				document.write('<p>stringValue is a ' + typeof (stringValue) + ', and its value is \'' + stringValue + '\'</p>');
+				document.write('<p>integerValue is a ' + typeof (integerValue) + ', and its value is ' + integerValue + '</p>');
+			}
+
+			function codeBlocks() {
+				// Grouping of code ("scoping") is controlled by curly brackets/braces, and individual
+				// statements are terminated with a semicolon.
+
+				var methodScopedVariable = 100;
+
+				document.write('<p>methodScopedVariable is initialized to ' + methodScopedVariable + '</p>');
+
+				if (1 == 1) {
+					var localScopedVariable = 10;
+
+					document.write('The value of localScopedVariable is ' + localScopedVariable + '</p>');
+
+					// methodScopedVariable is part of the outer scope, so it's available here, and
+					// can be modified.
+					methodScopedVariable = 200;
+				}
+
+				// JavaScript does NOT enforce local scoping, and so variables may be available longer
+				// than you expect.
+				document.write('<p>The value of localScopedVariable is ' + localScopedVariable + '</p>');
+
+				document.write('<p>Value of methodScopedVariable is now ' + methodScopedVariable + '</p>');
+			}
+
+			function loops() {
+				// A for loop has an establishing condition, a condition to check before executing the block,
+				// and a statement to execute for each iteration of the loop.
+				for (var i1 = 1; i1 < 5; i1++) {
+					document.write('<p>For loop, iteration ' + i1 + '</p>');
+				}
+
+				// A while loop executes as long as the condition of the while is true.
+				var i2 = 1;
+				while (i2 < 5) {
+					document.write('<p>While loop, iteration ' + i2 + '</p>');
+					i2++;
+				}
+			}
+
+			// camelCasing is recommended for Javascript variable and function names.
+			simpleOutput('Jim');
+
+			typingRules();
+
+			codeBlocks();
+
+			loops();
+		</script>
+	</body>
+
+</html>

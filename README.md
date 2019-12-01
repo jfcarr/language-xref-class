@@ -9,27 +9,22 @@
 
 ## Topics
 
-* General language comparison -> common use cases, "killer features", etc.
-* Environment setup -> installation, code editor, project management.
-* Basic syntax
-	* Naming conventions
-	* Statements, statement terminators
-	* Variable assignment
-	* Code blocks
-	* Comments, documentation comments
-* Control flow, e.g., foreach, for, while, do-while
-* Exception handling
-* Collection-type objects, e.g., arrays, hashs, vectors, dictionaries
-* String operations
-* Functions -> signatures, value vs reference
-* Object orientation
-* Threading
-	* async operations, wait
-* Tasks
-	* Simple -> Hello world!
-	* Tokenize a string
-	* Fibonacci sequence
-	* Call a web service
+* Simple Things
+	* Console output
+	* Functions
+	* Static vs Dynamic typing
+	* Variable declaration / assignment
+	* String formatting / interpolation
+	* Scoping
+	* Loops: for and while
+* Data Items
+	* Arrays
+	* Collections
+* Object Orientation
+	* Classes / Structs
+	* Constructors
+	* Properties
+	* Methods
 
 ## Links
 

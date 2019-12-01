@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8" />
+	</head>
+
+	<body>
+		<script>
+			// Enforce variable declaration.
+			"use strict";
+
+			// Classes are part of the ES6 standard.
+			class Member {
+				// Populate the first name, last name, and age values when an object is instanciated.
+				constructor(firstName, lastName, age) {
+					this.firstName = firstName;
+					this.lastName = lastName;
+					this.age = age;
+				}
+
+				// First Name property
+				get FirstName() {
+					return this.firstName;
+				}
+				set FirstName(value) {
+					this.firstName = value;
+				}
+
+				// Last Name property
+				get LastName() {
+					return this.lastName;
+				}
+				set LastName(value) {
+					this.lastName = value;
+				}
+
+				// Age property
+				get Age() {
+					return this.age;
+				}
+				set Age(value) {
+					this.age = value;
+				}
+
+				// Determine if the member is a legal adult.
+				isLegalAdult() {
+					if (this.age >= 18) {
+						return true;
+					} else {
+						return false;
+					}
+				}
+			}
+
+			// Instanciate a member object.
+			var newMember = new Member('John', 'Doe', 37);
+
+			document.write('<p>The new member record is for ' + newMember.FirstName + ' ' + newMember.LastName + ', who is ' + newMember.Age.toString() + ' years old.' + '</p>');
+
+			// Determine if the member is a legal adult, and display an appropriate message.
+			if (newMember.isLegalAdult() == true) {
+				document.write('<p>' + newMember.FirstName + ' is a legal adult.</p>');
+			} else {
+				document.write('<p>' + newMember.FirstName + ' is NOT a legal adult.</p>');
+			}
+		</script>
+	</body>
+
+</html>
