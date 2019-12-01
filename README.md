@@ -31,6 +31,7 @@ Working code samples are available for each of the covered languages (C#, Python
 * Data Items
 	* Arrays
 	* Collections
+	* Exception Handling
 * Object Orientation
 	* Classes / Structs
 	* Constructors
