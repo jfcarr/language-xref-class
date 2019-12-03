@@ -62,6 +62,8 @@ Online resources:
 
 Go was developed at Google as a C/C++-like system language, but safer and easier to use.  It's especially notable for strong concurrency support, and a self-hosted compiler toolchain allowing you to easily target many architectures and operating systems.
 
+Go is an _extremely_ opinionated language, as a means of enforcing clean code.  For example, items (like unused variables, and unused imports) that might simply produce warnings in other languages are build errors in Go.
+
 Online resources:
 
 * [Go home page](https://golang.org/)
