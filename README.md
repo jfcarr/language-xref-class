@@ -5,6 +5,7 @@
 You only need these if you want to work interactively with the code samples, or follow up in more detail on your own.
 
 * [.NET Core](https://dotnet.microsoft.com/download) (CS employees should already have this)
+  * **Note:** The .NET examples were built with .NET Core 3.  If you're using an earlier version, you'll need to update the TargetFramework value in the .csproj files accordingly.
 * [Python](https://www.python.org/downloads/)
 * [Go](https://golang.org/doc/install)
 * [Visual Studio Code](https://code.visualstudio.com/Download) (IDE), with the following extensions:
